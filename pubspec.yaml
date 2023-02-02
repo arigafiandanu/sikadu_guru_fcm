@@ -1,0 +1,40 @@
+name: sikadu_guru
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  carousel_slider: ^4.1.1
+  cloud_firestore: ^4.1.0
+  convex_bottom_bar: ^3.1.0+1
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.1.3
+  firebase_core: ^2.3.0
+  firebase_storage: ^11.0.6
+  firebase_messaging: ^14.2.1
+  permission_handler: ^10.2.0
+  http: ^0.13.5
+  flutter:
+    sdk: flutter
+  get: 4.6.5
+  image_picker: ^0.8.6
+  intl: ^0.17.0
+  lottie: ^2.0.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/lottie/
+    - assets/lottie/avatar.json
+    - assets/lottie/empty.json
+    - assets/lottie/login_admin.json
+    - assets/lottie/lupa_password.json
+    - assets/fotoimg2.png
+    
+  uses-material-design: true

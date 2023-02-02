@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "385072190539",
+    "project_id": "sikadu-iraa",
+    "storage_bucket": "sikadu-iraa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385072190539:android:e837e00fbc253d170a29ce",
+        "android_client_info": {
+          "package_name": "com.example.sikadu_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385072190539-krpit22hg7icg80fhc5h9uqcs77lunkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHfBUER1TNgjYgLcyDXFahdiUExAtzDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385072190539-krpit22hg7icg80fhc5h9uqcs77lunkq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "385072190539-d63k814k96ndnhsscvdbha9l5q9pkn76.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sikaduAdmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385072190539:android:a9b774b16fe639c50a29ce",
+        "android_client_info": {
+          "package_name": "com.example.sikadu_guru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385072190539-krpit22hg7icg80fhc5h9uqcs77lunkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjHfBUER1TNgjYgLcyDXFahdiUExAtzDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385072190539-krpit22hg7icg80fhc5h9uqcs77lunkq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "385072190539-d63k814k96ndnhsscvdbha9l5q9pkn76.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sikaduAdmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
