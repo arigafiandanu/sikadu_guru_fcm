@@ -75,7 +75,7 @@ class MasukkanNilaiController extends GetxController {
       Get.back();
       Get.snackbar(
         "Berhasil",
-        "Pelajaran berhasil ditambah",
+        "Nilai berhasil ditambah",
         snackPosition: SnackPosition.TOP,
         duration: const Duration(seconds: 5),
         borderRadius: 10,

@@ -232,8 +232,8 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
           var pelajaran = dataPelajaranIndex['pelajaran'];
 
           var grade = gradeData?['nilai'][kelas]?['semester 2']?[pelajaran];
-          var gradeUts = grade?['nilaiUts'] ?? "0";
-          var gradeSemester = grade?['nilaiSemester'] ?? "0";
+          var pts = grade?['PTS'] ?? "0";
+          var pas = grade?['PAS'] ?? "0";
 
           return Container(
             margin: const EdgeInsets.only(bottom: 10),
@@ -264,7 +264,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                       ),
                       width: Get.width / 5,
                       child: Text(
-                        gradeUts.toString(),
+                        pts.toString(),
                       ),
                     ),
                     Container(
@@ -273,7 +273,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                       ),
                       width: Get.width / 5,
                       child: Text(
-                        gradeSemester.toString(),
+                        pas.toString(),
                       ),
                     ),
                     Container(
@@ -351,8 +351,8 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
           var pelajaran = dataPelajaranIndex['pelajaran'];
 
           var grade = gradeData?['nilai'][kelas]?['semester 1']?[pelajaran];
-          var gradeUts = grade?['nilaiUts'] ?? "0";
-          var gradeSemester = grade?['nilaiSemester'] ?? "0";
+          var pts = grade?['PTS'] ?? "0";
+          var pas = grade?['PAS'] ?? "0";
 
           return Container(
             margin: const EdgeInsets.only(bottom: 10),
@@ -383,7 +383,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                       ),
                       width: Get.width / 5,
                       child: Text(
-                        gradeUts.toString(),
+                        pts.toString(),
                       ),
                     ),
                     Container(
@@ -392,7 +392,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                       ),
                       width: Get.width / 5,
                       child: Text(
-                        gradeSemester.toString(),
+                        pas.toString(),
                       ),
                     ),
                     Container(
@@ -408,8 +408,8 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                             arguments: {
                               "pelajaran": dataPelajaranIndex['pelajaran'],
                               "dataSiswa": dataSiswa,
-                              "nilaiUts": grade?['nilaiUts'],
-                              "nilaiSemester": grade?['nilaiSemester'],
+                              "nilaiUts": grade?['PTS'],
+                              "nilaiSemester": grade?['PAS'],
                               "catatanGuru": grade?['catatanGuru'],
                               "semester": "semester 1"
                             },
