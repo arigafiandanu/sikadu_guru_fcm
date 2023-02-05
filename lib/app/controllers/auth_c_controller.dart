@@ -80,37 +80,30 @@ class AuthCController extends GetxController {
             email: email, password: password);
 
         if (userlog.user!.emailVerified) {
-          if (userlog != null) {
-            _currentUser = FirebaseAuth.instance.currentUser;
-            final userId = _currentUser?.email;
+          _currentUser = FirebaseAuth.instance.currentUser;
+          final userId = _currentUser?.email;
 
-            await FirebaseFirestore.instance
-                .collection("users")
-                .doc(userId)
-                .set( {
-                  'token': await fMessaging.getToken(),
-                }, SetOptions(merge: true));
+          await FirebaseFirestore.instance
+              .collection("users")
+              .doc(userId)
+              .set( {
+                'token': await fMessaging.getToken(),
+              }, SetOptions(merge: true));
 
-            await FirebaseFirestore.instance
-                .collection("users")
-                .doc(userId)
-                .get()
-                .then((value) {
-              if (value.data()?['role'] == 'Guru') {
-                Get.offAllNamed(Routes.DASHBOARD);
-                getFirebaseMessage();
-                
-              } else {
-                Get.snackbar("bukan Guru",
-                    "Silahkan hubungi admin untuk info lebih lanjut");
-              }
-            });
-            // CollectionReference users = firestore.collection('users');
-            // print("proses simpan di model");
-            // final currUser = await users.doc(_currentUser?.email).get();
-            // final currUserData = currUser.data() as Map<String, dynamic>;
-            // print(currUserData);
-          }
+          await FirebaseFirestore.instance
+              .collection("users")
+              .doc(userId)
+              .get()
+              .then((value) {
+            if (value.data()?['role'] == 'Guru') {
+              Get.offAllNamed(Routes.DASHBOARD);
+              getFirebaseMessage();
+              
+            } else {
+              Get.snackbar("bukan Guru",
+                  "Silahkan hubungi admin untuk info lebih lanjut");
+            }
+          });
         } else {
           Get.defaultDialog(
             title: "verifikasi email",

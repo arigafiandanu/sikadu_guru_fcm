@@ -111,7 +111,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                                                 right: 20),
                                             width: Get.width / 5,
                                             child: const Text(
-                                              "Nilai UTS",
+                                              "PTS",
                                               style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
@@ -123,7 +123,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                                                 right: 20),
                                             width: Get.width / 5,
                                             child: const Text(
-                                              "Nilai Semester",
+                                              "PAS",
                                               style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
@@ -167,7 +167,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                                                 right: 20),
                                             width: Get.width / 5,
                                             child: const Text(
-                                              "Nilai UTS",
+                                              "PTS",
                                               style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
@@ -179,7 +179,7 @@ class MasukkanNilaiView extends GetView<MasukkanNilaiController> {
                                                 right: 20),
                                             width: Get.width / 5,
                                             child: const Text(
-                                              "Nilai Semester",
+                                              "PAS",
                                               style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,

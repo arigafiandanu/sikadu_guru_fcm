@@ -74,7 +74,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.LUPA_PASS,
-      page: () => const LupaPassView(),
+      page: () =>  LupaPassView(),
       binding: LupaPassBinding(),
     ),
     GetPage(

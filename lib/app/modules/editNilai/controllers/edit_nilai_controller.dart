@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class EditNilaiController extends GetxController {
-  TextEditingController nilaiUts = TextEditingController();
-  TextEditingController nilaiSemester = TextEditingController();
+  TextEditingController nilaiPTS = TextEditingController();
+  TextEditingController nilaiPAS = TextEditingController();
   TextEditingController catatanGuru = TextEditingController();
 
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -30,8 +30,8 @@ class EditNilaiController extends GetxController {
             "$waliKelas": {
               semester: {
                 mataPelajaran: {
-                  "nilaiUts": int.tryParse(nilaiUts.text) ?? 0,
-                  "nilaiSemester": int.tryParse(nilaiSemester.text) ?? 0,
+                  "PTS": int.tryParse(nilaiPTS.text) ?? 0,
+                  "PAS": int.tryParse(nilaiPAS.text) ?? 0,
                   "catatanGuru": catatanGuru.text
                 }
               }
