@@ -21,6 +21,7 @@ class DetailPengumumanView extends GetView<DetailPengumumanController> {
         ),
       );
     }).toList();
+    print("isi data ${ dataPengumuman['fotoPengumuman']}");
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -44,7 +45,7 @@ class DetailPengumumanView extends GetView<DetailPengumumanController> {
       ),
       body: ListView(
         children: [
-          dataPengumuman['fotoPengumuman'] == null
+         tempImage.isNotEmpty
               ? CarouselSlider(
                   items: tempImage,
                   options: CarouselOptions(
